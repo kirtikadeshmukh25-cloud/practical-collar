@@ -12,6 +12,15 @@ app.use('/api/auth', require('./routes/auth'));
 
 app.get('/', (req, res) => res.send('Livestock API running 🐄'));
 
+
+const allowedOrigins = [
+  'https://practical-collar.vercel.app', 
+  'http://localhost:5173' 
+];
+
+app.use(cors({
+  origin: allowedOrigins
+}));
 mongoose.connect(process.env.MONGO_URI)
   .then(() => app.listen(process.env.PORT, () =>
     console.log(`✅ Server: http://localhost:${process.env.PORT}`)))
