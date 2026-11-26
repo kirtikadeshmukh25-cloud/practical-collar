@@ -1,0 +1,9 @@
+.main { flex: 1; padding: 24px 32px; }
+.topbar {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 24px;
+}
+.hero h1 { font-size: 32px; color: #143d2b; margin-bottom: 6px; }
+.hero p { color: #555; }
+.user { background: #fff; padding: 10px 16px; border-radius: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.stats-row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
